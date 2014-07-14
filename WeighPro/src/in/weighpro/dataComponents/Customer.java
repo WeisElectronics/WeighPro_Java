@@ -24,7 +24,7 @@ public class Customer extends DataObject {
 
 //Constructor to initialize the customer object using a customer name
 	public Customer(String value) throws SQLException {
-		super("customers", value);//Call to the constructor of the DataObject class which retrieves the customer 
+		super("customers", value);//Call to the constructor of the DataObject class which retrieves the id 
 					//associated with this customer name
 					//may thorw an SQL exception because of the database functions
 	}
