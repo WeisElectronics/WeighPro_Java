@@ -54,6 +54,7 @@ public class MainFrame extends JFrame {
 	public static JPanel reportsPanel;
 	public static SettingsPanel settingsPanel;
 
+//----constructor to initialize all the sub panels-------------------------
 	MainFrame() {
 		setSize(new Dimension(ScreenDimensions.width, ScreenDimensions.height));//Setting the dimensions of the frame
 		setLayout(null);//custom layout
