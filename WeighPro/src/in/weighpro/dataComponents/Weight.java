@@ -49,7 +49,7 @@ public class Weight {
 	}
 
 
-//method to get the gross weight of the weight objcet
+//method to get the gross weight of the weight object
 	public int getGrossWeight() {
 		return grossWeight;
 	}
@@ -73,13 +73,13 @@ public class Weight {
 //method to record the weight of the vehicle during the second entry
 	public void secondWeight(int weight) {///takes the weight as an argument
 		if (tareWeight == -1) {//if tare weight has not been recorded yet
-			tareWeight = weight;//set the tare wweight 
+			tareWeight = weight;//set the tare weight 
 			incomingType = true;//incoming type true - gross weight was recorded first
 		} else {
 			grossWeight = weight;//else set the gross weight
 			incomingType = false;//incoming type false - tare weight was recorded first
 		}
-		netWeight = grossWeight - tareWeight;//netweight is calculated
+		netWeight = grossWeight - tareWeight;//net weight is calculated
 		if (netWeight < 0) {//if the operator has made an error recording the type of weight
 			tareWeight = tareWeight + grossWeight;//interchange the tare and gross weight
 			grossWeight = tareWeight - grossWeight;

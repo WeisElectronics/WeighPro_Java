@@ -29,7 +29,7 @@ public class WallpaperLabel extends JLabel {
 
 //Constructor to get an image icon from the image resource file and setting the image icon as the icon of the JLabel
 	public WallpaperLabel() throws SQLException {//Accesses database to get the current wallpaper hence throws the SQL Exception
-		CurrentWallpaperRetriever cwr = new CurrentWallpaperRetriever();//This class retrieves the current wallpaer and may throw a SQL Exception
+		CurrentWallpaperRetriever cwr = new CurrentWallpaperRetriever();//This class retrieves the current wallpaper and may throw a SQL Exception
 		imageIcon = new ImageIcon(getClass().getResource(cwr.getWallpaper()));//Creating an image icon from the image resource file in the same package
 		this.setIcon(imageIcon);//Setting the icon of the JLabel using the generated ImageIcon 
 		setBorder(new EmptyBorder(0, 0, 0, 0));//no border

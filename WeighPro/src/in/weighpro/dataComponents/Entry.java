@@ -163,7 +163,7 @@ public class Entry {
 		this.status = true;//set the status to complete
 	}
 
-//the to String method is overriden to return the vehicle number since that is shown in the incomplete list
+//the to String method is overridden to return the vehicle number since that is shown in the incomplete list
 	@Override
 	public String toString() {
 		return this.vehicle.getValue();

@@ -22,7 +22,7 @@ public class Material extends DataObject {
 	public Material(int index) throws SQLException {
 		super("materials", index);//Call to the constructor of the DataObject class which retrieves the material
 					//associated with this index
-					//may thorw an SQL exception because of the database functions
+					//may throw an SQL exception because of the database functions
 
 	}
 
@@ -30,7 +30,7 @@ public class Material extends DataObject {
 	public Material(String value) throws SQLException {
 		super("materials", value);//Call to the constructor of the DataObject class which retrieves the id
 					// associated with this material name
-					//may thorw an SQL exception because of the database functions
+					//may throw an SQL exception because of the database functions
 
 	}
 }

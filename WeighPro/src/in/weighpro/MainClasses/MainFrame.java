@@ -58,7 +58,7 @@ public class MainFrame extends JFrame {
 	MainFrame() {
 		setSize(new Dimension(ScreenDimensions.width, ScreenDimensions.height));//Setting the dimensions of the frame
 		setLayout(null);//custom layout
-		setUndecorated(true);//no titlebar
+		setUndecorated(true);//no title bar
 
 		mainFrm = this;//getting an instance of this class
 
@@ -78,7 +78,7 @@ public class MainFrame extends JFrame {
 			logo = new LogoLabel();//Initializing the product logo
 			background.add(logo);//Adding the product logo to the frame
 
-			timePanel = new TimePanel();//This panel is the deck that shows the time as well as the comapny name
+			timePanel = new TimePanel();//This panel is the deck that shows the time as well as the company name
 			background.add(timePanel);//Add the time panel
 			
 			firstEntryPanel = new FirstEntryPanel();//First entry panel has a form for the first entry 

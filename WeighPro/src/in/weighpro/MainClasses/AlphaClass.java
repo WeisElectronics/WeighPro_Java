@@ -35,7 +35,7 @@ public class AlphaClass {
 		try { 
 			SwingUtilities.invokeAndWait(new Runnable() {//Blocking thread which waits till all the 
 								//swing functionality has been executed
-								//Has to be implemented as a seperate runnable object
+								//Has to be implemented as a separate runnable object
 				
 		//This method is the execution part of the thread
 				@Override

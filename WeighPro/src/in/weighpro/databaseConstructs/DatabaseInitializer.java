@@ -19,7 +19,7 @@ import java.sql.SQLException;
 
 public class DatabaseInitializer {
 
-	public static boolean initialized = false;//flag to track whether the database and coressponding table have been
+	public static boolean initialized = false;//flag to track whether the database and corresponding table have been
 						  //initialized
 
 //Constructor to create all the SQL queries and perform respective actions on the database

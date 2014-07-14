@@ -62,7 +62,7 @@ public class TimeDetails {
 		formatter.format("%tF %<tT", calendar);//creating a string of the format YYYY-MM-DD HH-mm-ss
 		String str = formatter.toString();//get a string of the above format
 		formatter.close();//close the formatter 
-		return str.trim();//retuen the formatted date string
+		return str.trim();//return the formatted date string
 	}
 
 

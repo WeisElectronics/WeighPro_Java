@@ -1,4 +1,4 @@
-/* This class generayes the
+/* This class generates the
 * thumbnails which show the wallpapers
 * available for use in the settings panel
 

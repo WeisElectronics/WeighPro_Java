@@ -19,14 +19,14 @@ public class Vehicle extends DataObject {
 	public Vehicle(int index) throws SQLException {
 		super("vehicles", index);//Call to the constructor of the DataObject class which retrieves the vehicle
 					//associated with this index
-					//may thorw an SQL exception because of the database functions
+					//may throw an SQL exception because of the database functions
 	}
 
 //Constructor to initialize the vehicle object using a vehicle number
 	public Vehicle(String value) throws SQLException {
 		super("vehicles", value);//Call to the constructor of the DataObject class which retrieves the id
 						//associated with this vehicle number
-						//may thorw an SQL exception because of the database functions
+						//may throw an SQL exception because of the database functions
 	}
 
 }

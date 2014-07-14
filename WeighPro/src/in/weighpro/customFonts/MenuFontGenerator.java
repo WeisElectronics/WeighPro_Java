@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 
-//this class generates a font object from copperplate Gothic font(present in the same package) using an input stream
+//this class generates a font object from copperPlateGothic font(present in the same package) using an input stream
 public class MenuFontGenerator {
 	public static Font menuPanelFont;
 

@@ -16,7 +16,7 @@ public class LoginCredentials {
 	private String url = "jdbc:mysql://localhost:3306";
 	private String userName = "root";
 
-//method to gett the database name
+//method to get the database name
 	String getDatabaseName() {
 		return databaseName;
 	}
@@ -26,12 +26,12 @@ public class LoginCredentials {
 		return password;
 	}
 
-//method to get the url to setup the connection
+//method to get the URL to setup the connection
 	String getUrl() {
 		return url;
 	}
 
-//method to get the user name to acccess the database
+//method to get the user name to access the database
 	String getUserName() {
 		return userName;
 	}

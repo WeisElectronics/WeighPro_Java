@@ -18,7 +18,7 @@ public class Customer extends DataObject {
 	public Customer(int index) throws SQLException {
 		super("customers", index);//Call to the constructor of the DataObject class which retrieves the customer 
 					//associated with this index
-					//may thorw an SQL exception because of the database functions
+					//may throw an SQL exception because of the database functions
 	}
 
 
@@ -26,6 +26,6 @@ public class Customer extends DataObject {
 	public Customer(String value) throws SQLException {
 		super("customers", value);//Call to the constructor of the DataObject class which retrieves the id 
 					//associated with this customer name
-					//may thorw an SQL exception because of the database functions
+					//may throw an SQL exception because of the database functions
 	}
 }
