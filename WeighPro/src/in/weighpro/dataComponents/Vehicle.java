@@ -24,7 +24,7 @@ public class Vehicle extends DataObject {
 
 //Constructor to initialize the vehicle object using a vehicle number
 	public Vehicle(String value) throws SQLException {
-		super("vehicles", value);//Call to the constructor of the DataObject class which retrieves the vehicle
+		super("vehicles", value);//Call to the constructor of the DataObject class which retrieves the id
 						//associated with this vehicle number
 						//may thorw an SQL exception because of the database functions
 	}
