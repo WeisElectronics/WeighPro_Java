@@ -14,6 +14,8 @@ import java.awt.FontFormatException;
 import java.io.IOException;
 import java.io.InputStream;
 
+
+//this class uses the digital font (present in the same package) as a resource to generate a Font object
 public class DigitalFontGenerator {
 	public static Font digitalFont;
 
