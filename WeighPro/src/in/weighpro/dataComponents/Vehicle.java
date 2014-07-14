@@ -14,7 +14,7 @@ import java.sql.SQLException;
 //This class basically is an extension of the DataObject class and adds the description of a vehicle
 public class Vehicle extends DataObject {
 
-	//Constructor to initialize the customer object by using an index
+	//Constructor to initialize the vehicle object by using an index
 
 	public Vehicle(int index) throws SQLException {
 		super("vehicles", index);//Call to the constructor of the DataObject class which retrieves the vehicle
