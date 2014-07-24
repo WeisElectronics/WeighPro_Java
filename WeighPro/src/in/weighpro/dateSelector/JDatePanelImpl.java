@@ -1,3 +1,13 @@
+/*
+* This class provides the database query
+* used to get the entries corresponding to the 
+* constraints mentioned before retrieving reports
+
+* Made for WeighPro
+* Author Weis Electonics Pvt. Ltd.
+* Contribution by emdroidery
+*/
+
 package in.weighpro.dateSelector;
 import java.awt.Color;
 import java.awt.Component;
@@ -40,16 +50,7 @@ import net.sourceforge.jdatepicker.graphics.JPreviousIcon;
 import net.sourceforge.jdatepicker.impl.UtilCalendarModel;
 import net.sourceforge.jdatepicker.util.JDatePickerUtil;
 
-/**
- * Created on 26 Mar 2004 Refactored on 21 Jun 2004 Refactored on 8 Jul 2004
- * Refactored 14 May 2009 Refactored 16 April 2010 Updated 18 April 2010 Updated
- * 26 April 2010
- * 
- * @author Juan Heyns
- * @author JC Oosthuizen
- * @author Yue Huang
- * @param <T>
- */
+
 public class JDatePanelImpl extends JPanel implements JDatePanel {
 
 	private static final long serialVersionUID = -2299249311312882915L;
