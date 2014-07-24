@@ -1,3 +1,14 @@
+/*
+* This class provides the pluggable 
+* document filter which allows
+* only numbers
+* used for the amount field in the 
+* first entry panel
+
+* Made for WeighPro
+* Author Weis Electonics Pvt. Ltd.
+* Contribution by emdroidery
+*/
 package in.weighpro.documentFilters;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
