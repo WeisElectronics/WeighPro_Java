@@ -1,6 +1,14 @@
+/*
+* This class has screen dimension constants
+
+* Made for WeighPro
+* Author Weis Electonics Pvt. Ltd.
+* Contribution by emdroidery
+*/
+
 package in.weighpro.dimensionConstants;
 
 public class ScreenDimensions {
-	public static int height = 768;
-	public static int width = 1366;
+	public static final int height = 768;//height of the screen
+	public static final int width = 1366;//width of the screen
 }
