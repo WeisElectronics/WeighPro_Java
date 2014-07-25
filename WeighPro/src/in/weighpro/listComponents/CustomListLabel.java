@@ -20,7 +20,7 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 import javax.swing.border.EmptyBorder;
 
-//this class renders the indviual cells of the list
+//this class renders the individual cells of the list
 //it uses the functionality and the methods of the JLabel
 //it implements the ListCellRenderer which provides the functionality to act as a list cell
 public class CustomListLabel extends JLabel implements ListCellRenderer<Object> {
