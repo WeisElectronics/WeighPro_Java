@@ -51,8 +51,9 @@ public class WeightPanel extends JPanel implements Runnable {
 		isRunning = true;
 		try {
 		while (isRunning) {
-			
-				weight.setText(MainFrame.settingsPanel.getData());// Get weight
+				String weightString = MainFrame.settingsPanel.getData();
+				if(weightString!=null)
+				weight.setText(weightString);// Get weight
 																	// from the
 																	// synchronized
 																	// method

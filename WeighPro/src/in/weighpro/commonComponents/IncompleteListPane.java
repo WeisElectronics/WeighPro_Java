@@ -110,9 +110,9 @@ public class IncompleteListPane extends JPanel {
 																	// again
 
 						MainFrame.background.add(MainFrame.secondEntryPanel);
-						MainFrame.menuPanel.setAllDisabled();
+						MainFrame.functionsPanel.menuPanel.setAllDisabled();
 						MainFrame.secondEntryPanel.setVisible(true);
-						MainFrame.menuPanel.secondEntry.setClicked(true);
+						MainFrame.functionsPanel.menuPanel.secondEntry.setClicked(true);
 					} else if (MainFrame.secondEntryPanel.isVisible()) { // if
 																			// the
 																			// second

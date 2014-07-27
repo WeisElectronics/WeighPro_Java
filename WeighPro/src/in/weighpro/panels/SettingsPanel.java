@@ -357,16 +357,16 @@ public class SettingsPanel extends JPanel {
 			InterruptedException {
 		if (serialPort != null) {
 			InputStream inStream = serialPort.getInputStream();
-			byte[] buffer = new byte[6];
+			char[] buffer = new char[6];
 			byte c = 0;
 			int i = 0;
-			inStream.read();
-			while (c != ' ') {
+			while (c != ' '&& i<6) {
 				c = (byte) inStream.read();
-				buffer[i++] = (byte) c;
-				if(i>5)
-					break;
+				buffer[i++] = (char) c;
+				
 			}
+			
+			
 			String newString = new String(buffer);
 			newString = newString.trim();
 			if (newString.length() == 5) {
@@ -394,11 +394,11 @@ public class SettingsPanel extends JPanel {
 					return newString;
 
 				} catch (NumberFormatException e) {
-					e.printStackTrace();
-					return "00000";
+					return null;
 				}
 			}
+			
 		}
-		return "00000";
+		return null;
 	}
 }

@@ -12,16 +12,14 @@
 
 package in.weighpro.MainClasses;
 
-import in.weighpro.customImageLabels.LogoLabel;
 import in.weighpro.customImageLabels.WallpaperLabel;
 import in.weighpro.dimensionConstants.ScreenDimensions;
 import in.weighpro.panels.FirstEntryPanel;
-import in.weighpro.panels.MenuPanel;
+import in.weighpro.panels.FunctionsPanel;
 import in.weighpro.panels.PrintPanel;
 import in.weighpro.panels.ReportsPanel;
 import in.weighpro.panels.SecondEntryPanel;
 import in.weighpro.panels.SettingsPanel;
-import in.weighpro.panels.SystemFunctionsPanel;
 import in.weighpro.panels.TimePanel;
 
 import java.awt.Dimension;
@@ -44,16 +42,13 @@ public class MainFrame extends JFrame {
 	private static final long serialVersionUID = 6297858946347238643L;
 	public static WallpaperLabel background;
 	public static JFrame mainFrm;
-	public static MenuPanel menuPanel;
-	private SystemFunctionsPanel sysFuncPan;
-	private LogoLabel logo;
 	public static TimePanel timePanel;
 	public static FirstEntryPanel firstEntryPanel;
 	public static SecondEntryPanel secondEntryPanel;
 	public static PrintPanel printPanel;
 	public static JPanel reportsPanel;
 	public static SettingsPanel settingsPanel;
-
+	public static FunctionsPanel functionsPanel;
 //----constructor to initialize all the sub panels-------------------------
 	MainFrame() {
 		setSize(new Dimension(ScreenDimensions.width, ScreenDimensions.height));//Setting the dimensions of the frame
@@ -69,15 +64,9 @@ public class MainFrame extends JFrame {
 			settingsPanel = new SettingsPanel();//This panel contains all the settings concerning the software
 							   //both serial settings and appearance settings
 
-			menuPanel = new MenuPanel();//This panel contains all the menu navigation buttons 
-			background.add(menuPanel);//adding the menu panel to the frame
-
-			sysFuncPan = new SystemFunctionsPanel();//This panel contains the shutdown, restart and close buttons
-			background.add(sysFuncPan);//Adding the system functions panel to the frame
-
-			logo = new LogoLabel();//Initializing the product logo
-			background.add(logo);//Adding the product logo to the frame
-
+			functionsPanel = new FunctionsPanel();
+			background.add(functionsPanel);
+			
 			timePanel = new TimePanel();//This panel is the deck that shows the time as well as the company name
 			background.add(timePanel);//Add the time panel
 			

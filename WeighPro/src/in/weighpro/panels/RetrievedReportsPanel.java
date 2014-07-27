@@ -260,9 +260,9 @@ public class RetrievedReportsPanel extends JPanel {
 							entries[retrievedReportTable.getSelectedRow()]);
 
 					MainFrame.background.add(MainFrame.printPanel);
-					MainFrame.menuPanel.setAllDisabled();
+					MainFrame.functionsPanel.menuPanel.setAllDisabled();
 					MainFrame.printPanel.setVisible(true);
-					MainFrame.menuPanel.print.setClicked(true);
+					MainFrame.functionsPanel.menuPanel.print.setClicked(true);
 
 				}
 			}
