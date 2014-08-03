@@ -41,27 +41,22 @@ public class MenuPanel extends JPanel {
 				case "First Entry":
 					firstEntry.setClicked(true);
 					MainFrame.firstEntryPanel.setVisible(true);
-					
 					break;
 				case "Second Entry":
 					secondEntry.setClicked(true);
 					MainFrame.secondEntryPanel.setVisible(true);
-					
 					break;
 				case "Print":
 					print.setClicked(true);
 					MainFrame.printPanel.setVisible(true);
-					
 					break;
 				case "Reports":
 					reports.setClicked(true);
 					MainFrame.reportsPanel.setVisible(true);
-					
 					break;
 				case "Settings":
 					settings.setClicked(true);
 					MainFrame.settingsPanel.setVisible(true);
-					
 					break;
 				}
 			}
