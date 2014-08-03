@@ -1,7 +1,6 @@
 package in.weighpro.panels;
 
 import in.weighpro.MainClasses.MainFrame;
-import in.weighpro.customComponents.CustomHorzScrollBarUI;
 import in.weighpro.customComponents.CustomStandardButton;
 import in.weighpro.customComponents.CustomStandardLabel;
 import in.weighpro.customComponents.InternalTableCellRenderer;
@@ -219,7 +218,7 @@ public class RetrievedReportsPanel extends JPanel {
 		pane.getVerticalScrollBar().setUI(new CustomScrollBarUI());
 
 		pane.getHorizontalScrollBar().setOpaque(false);
-		pane.getHorizontalScrollBar().setUI(new CustomHorzScrollBarUI());
+		pane.getHorizontalScrollBar().setUI(new CustomScrollBarUI());
 
 		pane.setColumnHeader(new JViewport());
 		retrievedReportTable.getTableHeader().setDefaultRenderer(
