@@ -82,6 +82,7 @@ public class MainFrame extends JFrame {
 			background.add(settingsPanel);//adding the settings panel
 //During the process of initializing panels which are based on database retrieval an SQL exception maybe thrown 
 //This block processes that scenario
+				
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

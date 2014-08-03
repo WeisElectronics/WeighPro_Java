@@ -5,7 +5,6 @@ import in.weighpro.customComponents.MenuButton;
 import in.weighpro.customComponents.ResetButton;
 import in.weighpro.dimensionConstants.PanelBounds;
 import in.weighpro.dimensionConstants.PanelDimensions;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -42,22 +41,27 @@ public class MenuPanel extends JPanel {
 				case "First Entry":
 					firstEntry.setClicked(true);
 					MainFrame.firstEntryPanel.setVisible(true);
+					
 					break;
 				case "Second Entry":
 					secondEntry.setClicked(true);
 					MainFrame.secondEntryPanel.setVisible(true);
+					
 					break;
 				case "Print":
 					print.setClicked(true);
 					MainFrame.printPanel.setVisible(true);
+					
 					break;
 				case "Reports":
 					reports.setClicked(true);
 					MainFrame.reportsPanel.setVisible(true);
+					
 					break;
 				case "Settings":
 					settings.setClicked(true);
 					MainFrame.settingsPanel.setVisible(true);
+					
 					break;
 				}
 			}
@@ -172,6 +176,7 @@ public class MenuPanel extends JPanel {
 					}
 
 				}
+				
 			}
 		});
 
@@ -202,4 +207,6 @@ public class MenuPanel extends JPanel {
 		MainFrame.settingsPanel.setVisible(false);
 
 	}
+	
+
 }
