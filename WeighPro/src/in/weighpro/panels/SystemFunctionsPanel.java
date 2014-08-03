@@ -59,7 +59,7 @@ public class SystemFunctionsPanel extends JLabel {
 			public void actionPerformed(ActionEvent e) {
 				Runtime rt = Runtime.getRuntime();
 				JPanel panel = new JPanel();
-				JLabel label = new JLabel("Enter a password:");
+				JLabel label = new JLabel("Enter the password:");
 				JPasswordField pass = new JPasswordField(10);
 				panel.add(label);
 				panel.add(pass);
